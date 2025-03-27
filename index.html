@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Fonts-->
+		<link rel="stylesheet" type="text/css" href="fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="fonts/pe-icon/pe-icon.css">
+		<!-- Vendors-->
+		<link rel="stylesheet" type="text/css" href="vendors/bootstrap/grid.css">
+		<link rel="stylesheet" type="text/css" href="vendors/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" type="text/css" href="vendors/swiper/swiper.css">
+		<!-- App & fonts-->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,600|Playfair+Display:400i">
+		<link rel="stylesheet" type="text/css" href="main.css"><!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+				
+				<!-- preload -->
+				<div class="preload" id="preload">
+					<div class="cssload-spin-box"></div>
+				</div><!-- End / preload -->
+				
+		<div class="page-wrap">
+			
+			<!-- header -->
+			<header class="header header-fixheight header--fixed">
+				<div class="container">
+					<div class="header__inner">
+						<div class="header-logo"><a href="home.html"><img class="main-logo" src="my_imgs/logo.jpeg" alt=""/></a></div>
+						
+						<!-- raising-nav -->
+						<nav class="raising-nav">
+							
+							<!-- raising-menu -->
+							<ul class="raising-menu">
+								<li class="current"><a href="#id1">Home</a>
+								</li>
+								<li><a href="#id2">About</a>
+								</li>
+								<li><a href="#id3">service</a>
+								</li>
+								<li><a href="#id4">gallery</a>
+								</li>
+								<li><a href="#id5">testimonial</a>
+								</li>
+								<li><a href="#id6">team</a>
+								</li>
+								<li><a href="#id7">contact us</a>
+								</li>
+								<!-- <li id="login-button">
+									<a href="#id1" onclick="show_main_login()">LOG In</a>
+								</li> -->
+								<li id="chat-button" onclick="showchat()">
+									<a href="#id1">CHAT</a>
+								</li>
+							</ul><!-- raising-menu -->
+							
+							<div class="navbar-toggle"><i class="fa fa-bars"></i></div>
+						</nav><!-- End / raising-nav -->
+						
+						<div class="btn-right">
+							<div class="search-btn"><i class="fa fa-search"></i></div>
+						</div>
+						<div class="searchbar">
+							<div class="searchbar__group"><span class="searchbar__addon"><i class="fa fa-search"></i></span>
+								<input class="searchbar__input" type="text" name="search" value="" placeholder="Search"/><span class="searchbar__close"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header><!-- End / header -->
+			
+			<!-- Content-->
+			<div class="md-content">
+
+				<div id="id8">
+					<a class="review">
+						<u>LOG IN / REGISTER</u>
+					</a>
+					<button class="butt-main-pop1" onclick="show_admin_login()">ADMIN</button>
+					<button class="butt-main-pop2" onclick="show_client_login_main()">CLIENT</button>
+					<button class="cancel-butt" onclick="cancel_main_login()">Cancel</button>
+				</div>
+
+				<div id="id9">
+					<a class="review2">
+						<u>LOG IN</u>
+					</a>
+					<div class="login-system">
+						<p class="login-para">Username: </p>
+						<input type="text" placeholder="username" id="noone">
+						<p class="login-para">Password: </p>
+						<input type="password" placeholder="password" id="zero">
+					</div>
+					<button class="button-login" onclick="fetchData_admins()">
+						<p id="button-login-para">Submit</p>
+					</button>
+					<button class="button-login" onclick="cancel_admin_login()">
+						<p id="button-login-para">Cancel</p>
+					</button>
+				</div>
+
+				<div id="id10">
+					<a class="review">
+						<u>LOG IN / REGISTER</u>
+					</a>
+					<button class="butt-main-pop1" onclick="show_client_login()">LOG IN</button>
+					<button class="butt-main-pop2" onclick="show_client_register()">REGISTER</button>
+					<button class="cancel-butt" onclick="cancel_client_login2()">Cancel</button>
+				</div>
+
+				<div id="id11">
+					<a class="review2">
+						<u>LOG IN</u>
+					</a>
+
+					<p class="login-para">Username: </p>
+					<input type="text" placeholder="username" id="one">
+					<p class="login-para">Password: </p>
+					<input type="password" placeholder="password" id="two">
+
+					<button class="button-login" onclick="fetchData()">
+						<p id="button-login-para">Submit</p>
+					</button>
+					<button class="button-login" onclick="cancel_client_login3()">
+						<p id="button-login-para">Cancel</p>
+					</button>
+				</div>
+
+				<div id="id12">
+					<a class="review3">
+						<u>REGISTER</u>
+					</a>
+
+					<p class="login-para2">Username: </p>
+					<input type="text" placeholder="username" id="three">
+					<p class="login-para2">Password: </p>
+					<input type="password" placeholder="password" id="four">
+					<p class="login-para2">Mobile: </p>
+					<input type="text" placeholder="1234567890" id="five">
+					<p class="login-para2">Email: </p>
+					<input type="email" placeholder="xyz@gmail.com" id="six">
+
+					<button class="button-login" onclick="insertData()">
+						<p id="button-login-para">Submit</p>
+					</button>
+					<button class="button-login" onclick="cancel_client_register()">
+						<p id="button-login-para">Cancel</p>
+					</button>
+				</div>
+
+				<div id="chat-container">
+					<h3>Client Chat</h3>
+					<button id="cancel-button-chat" onclick="cancelChat()">X</button>
+					<div id="chat-box"></div>
+					<input type="text" id="message" placeholder="Type a message..." />
+					<button id="send-button-chat" onclick="sendMessage()">Send</button>
+					<button id="delete-button-chat" onclick="deleteChat()">Delete Chat</button>
+				</div>
+				
+				<!-- hero -->
+				<hero class="hero" id="id1">
+					
+					<!-- swiper swiper-container -->
+					<div class="swiper swiper-container">
+						<div class="swiper-wrapper">
+							<div class="hero__wrapper" style="background-image: url('my_imgs/IMG_8261.jpeg');">
+								<div class="hero__inner">
+									<div class="container">
+										<h1 class="hero__title">The Best Construction Near You</h1>
+										<p class="hero__desc">We provide you with the best facilities for construction/renovation.</p>
+										
+										<!-- btn -->
+										<!-- <a class="btn btn-primary" href="#">button
+										</a>End / btn -->
+										
+									</div>
+								</div>
+							</div>
+							<div class="hero__wrapper" style="background-image: url('my_imgs/PHOTO-2025-03-17-11-53-00.jpeg');">
+								<div class="hero__inner">
+									<div class="container">
+										<h1 class="hero__title">Design a Perfect Home</h1>
+										<p class="hero__desc">We provide you with the best designs for your house.</p>
+										
+										<!-- btn -->
+										<!-- <a class="btn btn-primary" href="#">button
+										</a>End / btn -->
+										
+									</div>
+								</div>
+							</div>
+							<div class="hero__wrapper" style="background-image: url('my_imgs/PHOTO-2025-03-17-11-44-24.jpeg');">
+								<div class="hero__inner">
+									<div class="container">
+										<h1 class="hero__title">Best Concrete Designs</h1>
+										<p class="hero__desc">We give you the best designs for your floor concrete.</p>
+										
+										<!-- btn -->
+										<!-- <a class="btn btn-primary" href="#">button
+										</a>End / btn -->
+										
+									</div>
+								</div>
+							</div>
+							<div class="hero__wrapper" style="background-image: url('my_imgs/9.jpg');">
+								<div class="hero__inner">
+									<div class="container">
+										<h1 class="hero__title">Basements or Side Entrances</h1>
+										<p class="hero__desc">We serve you with legal basement or side entrance construction.</p>
+										
+										<!-- btn -->
+										<!-- <a class="btn btn-primary" href="#">button
+										</a>End / btn -->
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination-custom"></div>
+						<div class="swiper-button-custom">
+							<div class="swiper-button-prev-custom"><i class="fa fa-angle-left"></i></div>
+							<div class="swiper-button-next-custom"><i class="fa fa-angle-right"></i></div>
+						</div>
+					</div><!-- End / swiper swiper-container -->
+					
+				</hero><!-- End / hero -->
+				
+				
+				<!-- cta-02 -->
+				<div class="cta-02">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-9 ">
+								<h3 class="cta-02__title">Looking for a high quality constructor company for your project?</h3>
+							</div>
+							<div class="col-lg-3  md-text-right">
+								
+								<!-- btn -->
+								<a class="btn btn-outline" href="#">Get a quote
+								</a><!-- End / btn -->
+								
+							</div>
+						</div>
+					</div>
+				</div><!-- End / cta-02 -->
+				
+				
+				<!-- Section -->
+				<section class="md-section" id="id2" style="background-color:#fff;padding:60px 0;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 ">
+								<div class="mb-30">
+									
+									<!-- sec-title -->
+									<div class="sec-title sec-title__lg-title">
+										<h2 class="sec-title__title">About <span>P.V.M Construction</span></h2><span class="sec-title__divider"></span>
+									</div><!-- End / sec-title -->
+									
+									<p>At P.V.M Construction, we take pride in delivering high-quality construction solutions tailored to meet the needs of our clients. With years of experience in the industry, we specialize in residential, commercial, and industrial projects, ensuring excellence in every aspect of design, planning, and execution. Our team of skilled professionals is committed to innovation, safety, and sustainability, striving to build structures that stand the test of time. From concept to completion, we focus on precision, efficiency, and customer satisfaction, making us a trusted name in the construction industry.</p><br>
+									<!-- <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</p><br><br> -->
+									<a class="btn btn-primary btn-outline" href="#">More about us</a>
+								</div>
+							</div>
+							<div class="col-lg-6 ">
+								
+								<!-- about -->
+								<div class="about"><img src="my_imgs/PHOTO-2025-03-17-11-49-09 (3).jpeg" alt=""/>
+									
+									<!-- quote-02 -->
+									<blockquote class="quote-02 about-quote">
+										<p class="quote-02__text">At P.V.M Construction, we believe that great design is the foundation of exceptional construction. As designers, our vision is to create spaces that are not only functional but also aesthetically inspiring. We blend creativity with structural precision, ensuring that every project reflects innovation, efficiency, and sustainability.</p>
+										
+										<!-- authorbox -->
+										<div class="authorbox">
+											<!-- <div class="authorbox__avartar" style="background-image: url(my_imgs/PHOTO-2025-03-17-11-49-09 (3).jpeg);"><img src="PHOTO-2025-03-17-11-49-09 (3)" alt=""/></div> -->
+											<div class="authorbox__info">
+												<h5 class="authorbox__name">XYZ</h5>
+												<p class="authorbox__work">Designer</p>
+											</div>
+										</div><!-- End / authorbox -->
+										
+									</blockquote><!-- End / quote-02 -->
+									
+								</div><!-- End / about -->
+								
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				
+				<!-- Section -->
+				<section class="md-section" id="id3">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 ">
+								
+								<!-- sec-title -->
+								<div class="sec-title sec-title__lg-title md-text-center">
+									<h2 class="sec-title__title">Our services</h2><span class="sec-title__divider"></span>
+								</div><!-- End / sec-title -->
+								
+							</div>
+						</div>
+						<div class="row row-eq-height">
+							<div class="col-sm-6 col-md-6 col-lg-4 ">
+								
+								<!-- services -->
+								<div class="services">
+									<div class="services__img"><img class="image-services" src="my_imgs/PHOTO-2025-03-17-11-55-34 2.jpeg" alt=""/></div>
+									<h2 class="services__title"><a>Renovation</a></h2>
+									<div class="services__desc">We renovate your house in your own way, to make it look amazing.</div>
+									
+									<!-- btn -->
+									<a class="btn btn btn-primary btn-custom" href="#id3">read more
+									</a><!-- End / btn -->
+									
+								</div><!-- End / services -->
+								
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-4 ">
+								
+								<!-- services -->
+								<div class="services">
+									<div class="services__img"><img class="image-services" src="my_imgs/PHOTO-2025-03-17-11-49-10.jpeg" alt=""/></div>
+									<h2 class="services__title"><a>Heated Drive Way</a></h2>
+									<div class="services__desc">Modern technologies such as a Heated Drive Way are provided and included in our services.</div>
+									
+									<!-- btn -->
+									<a class="btn btn btn-primary btn-custom" href="#id3">read more
+									</a><!-- End / btn -->
+									
+								</div><!-- End / services -->
+								
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-4 ">
+								
+								<!-- services -->
+								<div class="services">
+									<div class="services__img"><img class="image-services" src="my_imgs/IMG_8261.jpeg" alt=""/></div>
+									<h2 class="services__title"><a>Stamped Concrete</a></h2>
+									<div class="services__desc">Various types of concrete such as stamped concrete are served by us.</div>
+									
+									<!-- btn -->
+									<a class="btn btn btn-primary btn-custom" href="#id3">read more
+									</a><!-- End / btn -->
+									
+								</div><!-- End / services -->
+								
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-4 ">
+								
+								<!-- services -->
+								<div class="services">
+									<div class="services__img"><img class="image-services" src="my_imgs/IMG_4025.jpeg" alt=""/></div>
+									<h2 class="services__title"><a>Exposed aggregate concrete</a></h2>
+									<div class="services__desc">A high quality Exposed Aggregate concrete is installed professionally by our team.</div>
+									
+									<!-- btn -->
+									<a class="btn btn btn-primary btn-custom" href="#id3">read more
+									</a><!-- End / btn -->
+									
+								</div><!-- End / services -->
+								
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-4 ">
+								
+								<!-- services -->
+								<div class="services">
+									<div class="services__img"><img class="image-services" src="my_imgs/PHOTO-2025-03-17-11-44-47 2.jpeg" alt=""/></div>
+									<h2 class="services__title"><a>Plain Brush Finish</a></h2>
+									<div class="services__desc">A fine Plain Brush finish is given to the job and it looks amazing.</div>
+									
+									<!-- btn -->
+									<a class="btn btn btn-primary btn-custom" href="#id3">read more
+									</a><!-- End / btn -->
+									
+								</div><!-- End / services -->
+								
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-4 ">
+								
+								<!-- services -->
+								<div class="services">
+									<div class="services__img"><img class="image-services" src="my_imgs/PHOTO-2025-03-17-11-44-24 (4).jpeg" alt=""/></div>
+									<h2 class="services__title"><a>Legal Basement and Side Entrance</a></h2>
+									<div class="services__desc">We create basements and side entrances that are not only legal, but also good looking and stylish.</div>
+									
+									<!-- btn -->
+									<a class="btn btn btn-primary btn-custom" href="#id3">read more
+									</a><!-- End / btn -->
+									
+								</div><!-- End / services -->
+								
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				
+				<!-- Section -->
+				<section class="md-section" id="id4" style="background-color:#fff;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 ">
+								
+								<!-- sec-title -->
+								<div class="sec-title sec-title__lg-title md-text-center">
+									<h2 class="sec-title__title">Gallery</h2><span class="sec-title__divider"></span>
+								</div><!-- End / sec-title -->
+								
+							</div>
+						</div>
+						
+						<!-- gallery-wrap -->
+						<div class="gallery-wrap gallery-album">
+							<div class="grid-css grid-css--grid" data-col-lg="4" data-col-md="2" data-col-sm="2" data-col-xs="1" data-gap="30">
+								<div class="grid__inner">
+									<div class="grid-sizer"></div>
+									
+									<!-- grid-item -->
+									<div class="grid-item large">
+										<div class="grid-item__inner">
+											<div class="grid-item__content-wrapper">
+												
+												<!-- gallery -->
+												<div class="gallery gallery--grid">
+													<div class="gallery__image bg-image" style="background-image: url(my_imgs/9.jpg);"><img src="my_imgs/9.jpg" alt="How to Create and"/><a class="gallery__overlay mfp-image" href="my_imgs/9.jpg" data-effect="mfp-zoom-in" title="Design a Perfect">
+															<div class="md-tb">
+																<div class="md-tb__cell md-text-center"><i class="fa fa-search"></i></div>
+															</div></a>
+													</div>
+												</div><!-- End / gallery -->
+												
+											</div>
+										</div>
+									</div><!-- End / grid-item -->
+									
+									
+									<!-- grid-item -->
+									<div class="grid-item wide">
+										<div class="grid-item__inner">
+											<div class="grid-item__content-wrapper">
+												
+												<!-- gallery -->
+												<div class="gallery gallery--grid">
+													<div class="gallery__image bg-image" style="background-image: url(my_imgs/10.jpeg);"><img src="my_imgs/10.jpeg" alt="How to Master"/><a class="gallery__overlay mfp-image" href="my_imgs/10.jpeg" data-effect="mfp-zoom-in" title="Using Memes in Your">
+															<div class="md-tb">
+																<div class="md-tb__cell md-text-center"><i class="fa fa-search"></i></div>
+															</div></a>
+													</div>
+												</div><!-- End / gallery -->
+												
+											</div>
+										</div>
+									</div><!-- End / grid-item -->
+									
+									
+									<!-- grid-item -->
+									<div class="grid-item">
+										<div class="grid-item__inner">
+											<div class="grid-item__content-wrapper">
+												
+												<!-- gallery -->
+												<div class="gallery gallery--grid">
+													<div class="gallery__image bg-image" style="background-image: url(my_imgs/11.jpeg);"><img src="my_imgs/11.jpeg" alt="7 UI Choices That"/><a class="gallery__overlay mfp-image" href="my_imgs/11.jpeg" data-effect="mfp-zoom-in" title="Free PSD Files">
+															<div class="md-tb">
+																<div class="md-tb__cell md-text-center"><i class="fa fa-search"></i></div>
+															</div></a>
+													</div>
+												</div><!-- End / gallery -->
+												
+											</div>
+										</div>
+									</div><!-- End / grid-item -->
+									
+									
+									<!-- grid-item -->
+									<div class="grid-item">
+										<div class="grid-item__inner">
+											<div class="grid-item__content-wrapper">
+												
+												<!-- gallery -->
+												<div class="gallery gallery--grid">
+													<div class="gallery__image bg-image" style="background-image: url(my_imgs/12.jpeg);"><img src="my_imgs/12.jpeg" alt="Using Memes in Your"/><a class="gallery__overlay mfp-image" href="my_imgs/12.jpeg" data-effect="mfp-zoom-in" title="Is UX Really That">
+															<div class="md-tb">
+																<div class="md-tb__cell md-text-center"><i class="fa fa-search"></i></div>
+															</div></a>
+													</div>
+												</div><!-- End / gallery -->
+												
+											</div>
+										</div>
+									</div><!-- End / grid-item -->
+									
+									
+									<!-- grid-item -->
+									<div class="grid-item">
+										<div class="grid-item__inner">
+											<div class="grid-item__content-wrapper">
+												
+												<!-- gallery -->
+												<div class="gallery gallery--grid">
+													<div class="gallery__image bg-image" style="background-image: url(my_imgs/13.jpeg);"><img src="my_imgs/13.jpeg" alt="How To Build A"/><a class="gallery__overlay mfp-image" href="my_imgs/13.jpeg" data-effect="mfp-zoom-in" title="Free Sketch Plugins">
+															<div class="md-tb">
+																<div class="md-tb__cell md-text-center"><i class="fa fa-search"></i></div>
+															</div></a>
+													</div>
+												</div><!-- End / gallery -->
+												
+											</div>
+										</div>
+									</div><!-- End / grid-item -->
+									
+									
+									<!-- grid-item -->
+									<div class="grid-item">
+										<div class="grid-item__inner">
+											<div class="grid-item__content-wrapper">
+												
+												<!-- gallery -->
+												<div class="gallery gallery--grid">
+													<div class="gallery__image bg-image" style="background-image: url(my_imgs/14.jpeg);"><img src="my_imgs/14.jpeg" alt="Using Memes in Your"/><a class="gallery__overlay mfp-image" href="my_imgs/14.jpeg" data-effect="mfp-zoom-in" title="How to Create and">
+															<div class="md-tb">
+																<div class="md-tb__cell md-text-center"><i class="fa fa-search"></i></div>
+															</div></a>
+													</div>
+												</div><!-- End / gallery -->
+												
+											</div>
+										</div>
+									</div><!-- End / grid-item -->
+									
+									
+									<!-- grid-item -->
+									<div class="grid-item large">
+										<div class="grid-item__inner">
+											<div class="grid-item__content-wrapper">
+												
+												<!-- gallery -->
+												<div class="gallery gallery--grid">
+													<div class="gallery__image bg-image" style="background-image: url(my_imgs/15.jpeg);"><img src="my_imgs/15.jpeg" alt="Is UX Really That"/><a class="gallery__overlay mfp-image" href="my_imgs/15.jpeg" data-effect="mfp-zoom-in" title="How to Master">
+															<div class="md-tb">
+																<div class="md-tb__cell md-text-center"><i class="fa fa-search"></i></div>
+															</div></a>
+													</div>
+												</div><!-- End / gallery -->
+												
+											</div>
+										</div>
+									</div><!-- End / grid-item -->
+									
+									
+									<!-- grid-item -->
+									<div class="grid-item wide">
+										<div class="grid-item__inner">
+											<div class="grid-item__content-wrapper">
+												
+												<!-- gallery -->
+												<div class="gallery gallery--grid">
+													<div class="gallery__image bg-image" style="background-image: url(my_imgs/16.jpeg);"><img src="my_imgs/16.jpeg" alt="Getting Started with"/><a class="gallery__overlay mfp-image" href="my_imgs/16.jpeg" data-effect="mfp-zoom-in" title="The Essential Guide">
+															<div class="md-tb">
+																<div class="md-tb__cell md-text-center"><i class="fa fa-search"></i></div>
+															</div></a>
+													</div>
+												</div><!-- End / gallery -->
+												
+											</div>
+										</div>
+									</div><!-- End / grid-item -->
+									
+								</div>
+							</div>
+						</div><!-- End / gallery-wrap -->
+						
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				
+				<!-- Section -->
+				<section class="md-section" id="id5">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 ">
+								
+								<!-- sec-title -->
+								<div class="sec-title sec-title__lg-title md-text-center">
+									<h2 class="sec-title__title">Testimonial</h2><span class="sec-title__divider"></span>
+								</div><!-- End / sec-title -->
+								
+							</div>
+						</div>
+						
+						<!-- swiper swiper-container -->
+						<div class="swiper swiper-container" data-options='{"slidesPerView":3,"spaceBetween":30,"breakpoints":{"600":{"slidesPerView":1},"991":{"slidesPerView":2,"spaceBetween":30}}}'>
+							<div class="swiper-wrapper">
+								<div class="testimonial-item">
+									
+									<!-- quote -->
+									<blockquote class="quote">
+										<p>As a developer, working with P.V.M Construction has been an exceptional experience. Their commitment to quality, efficiency, and innovation is evident in every project they undertake. From planning to execution, their team ensures that every detail is meticulously handled, delivering outstanding results that exceed expectations.</p>
+									</blockquote><!-- End / quote -->
+									
+									
+									<!-- authorbox -->
+									<div class="authorbox">
+										<div class="authorbox__avartar" style="background-image: url(https://unsplash.it/800);"><img src="https://unsplash.it/800" alt=""/></div>
+										<div class="authorbox__info">
+											<h5 class="authorbox__name">Sukhdeep Singh</h5>
+											<p class="authorbox__work">Owner</p>
+										</div>
+									</div><!-- End / authorbox -->
+									
+								</div>
+								<div class="testimonial-item">
+									
+									<!-- quote -->
+									<blockquote class="quote">
+										<p>P.V.M Construction has been a huge and a very good group for a while. They always put all their efforts in making you even happy and comfortable regarding your own work, and try to finish it as soon as possible.</p>
+									</blockquote><!-- End / quote -->
+									
+									
+									<!-- authorbox -->
+									<div class="authorbox">
+										<div class="authorbox__avartar" style="background-image: url(https://unsplash.it/800);"><img src="https://unsplash.it/800" alt=""/></div>
+										<div class="authorbox__info">
+											<h5 class="authorbox__name">Mr. Singh</h5>
+											<p class="authorbox__work">Client</p>
+										</div>
+									</div><!-- End / authorbox -->
+									
+								</div>
+								<div class="testimonial-item">
+									
+									<!-- quote -->
+									<blockquote class="quote">
+										<p>It has been a great group to work with. They dedicate their day and night towards the job and give full attention to every minor detail of the job. They are very precise and accurate in their judgements and calculations.</p>
+									</blockquote><!-- End / quote -->
+									
+									
+									<!-- authorbox -->
+									<div class="authorbox">
+										<div class="authorbox__avartar" style="background-image: url(https://unsplash.it/800);"><img src="https://unsplash.it/800" alt=""/></div>
+										<div class="authorbox__info">
+											<h5 class="authorbox__name">Rahul Kumar</h5>
+											<p class="authorbox__work">Client</p>
+										</div>
+									</div><!-- End / authorbox -->
+									
+								</div>
+								<div class="testimonial-item">
+									
+									<!-- quote -->
+									<blockquote class="quote">
+										<p>Mauris lacinia venenatis dolor sit amet viverra. Integer malesuada nulla neque. Sed rutrum ligula eu sagittis volutpat. Aliquam erat volutpat. Praesent mattis non nulla eget</p>
+									</blockquote><!-- End / quote -->
+									
+									
+									<!-- authorbox -->
+									<div class="authorbox">
+										<div class="authorbox__avartar" style="background-image: url(https://unsplash.it/800);"><img src="https://unsplash.it/800" alt=""/></div>
+										<div class="authorbox__info">
+											<h5 class="authorbox__name">Brittany Williams</h5>
+											<p class="authorbox__work">Developer</p>
+										</div>
+									</div><!-- End / authorbox -->
+									
+								</div>
+							</div>
+						</div><!-- End / swiper swiper-container -->
+						
+					</div>
+
+					<div id="review-box">
+						<input type="text" placeholder="Write a review..." id="review-field">
+						<button id="review-submit-button" onclick="submit_review()">Submit</button>
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				
+				<!-- Section -->
+				<section class="md-section md-skin-dark" id="id6" style="background-image:url(&quot;img/bg/demo.jpg&quot;);padding-bottom:50px;">
+					<div class="md-overlay"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 ">
+								
+								<!-- sec-title -->
+								<div class="sec-title sec-title__lg-title md-text-center">
+									<h2 class="sec-title__title">Our team</h2><span class="sec-title__divider"></span>
+								</div><!-- End / sec-title -->
+								
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 col-md-6 col-lg-3 ">
+								
+								<!-- team -->
+								<div class="team">
+									<div class="team__img"><img src="my_imgs/team1.jpg" alt=""/>
+										<div class="team__overlay">
+											<div class="md-tb">
+												<div class="md-tb__cell md-text-center">
+																	
+																	<!-- social-icon -->
+																	<!-- <a class="social-icon social-icon__style-03" href="#"><i class="social-icon__icon fa fa-facebook"></i>
+																	</a>End / social-icon -->
+																	
+																	
+																	<!-- social-icon -->
+																	<!-- <a class="social-icon social-icon__style-03" href="#"><i class="social-icon__icon fa fa-twitter"></i>
+																	</a>End / social-icon -->
+																	
+																	
+																	<!-- social-icon -->
+																	<!-- <a class="social-icon social-icon__style-03" href="#"><i class="social-icon__icon fa fa-linkedin"></i>
+																	</a>End / social-icon -->
+																	
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="team__body">
+										<div class="team__user">
+											<h4 class="team__name">Sukhdeep Singh</h4><span class="team__work">Founder</span>
+										</div>
+										<p class="team__text">The proud founder of this company assures the best service for you.</p>
+									</div>
+								</div><!-- End / team -->
+								
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3 ">
+								
+								<!-- team -->
+								<div class="team">
+									<div class="team__img"><img src="my_imgs/team2.jpg" alt=""/>
+										<div class="team__overlay">
+											<div class="md-tb">
+												<div class="md-tb__cell md-text-center">
+																	
+																	<!-- social-icon -->
+																	<!-- <a class="social-icon social-icon__style-03" href="#"><i class="social-icon__icon fa fa-facebook"></i>
+																	</a>End / social-icon -->
+																	
+																	
+																	<!-- social-icon -->
+																	<!-- <a class="social-icon social-icon__style-03" href="#"><i class="social-icon__icon fa fa-twitter"></i>
+																	</a>End / social-icon -->
+																	
+																	
+																	<!-- social-icon -->
+																	<!-- <a class="social-icon social-icon__style-03" href="#"><i class="social-icon__icon fa fa-linkedin"></i>
+																	</a>End / social-icon -->
+																	
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="team__body">
+										<div class="team__user">
+											<h4 class="team__name">Ramandeep Singh</h4><span class="team__work">Manager</span>
+										</div>
+										<p class="team__text">The manager of PVM construction supervises the whole work and manages it accordingly.</p>
+									</div>
+								</div><!-- End / team -->
+								
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3 ">
+								
+								<!-- team -->
+								<div class="team">
+									<div class="team__img"><img src="my_imgs/team3.jpg" alt=""/>
+										<div class="team__overlay">
+											<div class="md-tb">
+												<div class="md-tb__cell md-text-center">
+																	
+																	<!-- social-icon -->
+																	<!-- <a class="social-icon social-icon__style-03" href="#"><i class="social-icon__icon fa fa-facebook"></i>
+																	</a>End / social-icon -->
+																	
+																	
+																	<!-- social-icon -->
+																	<!-- <a class="social-icon social-icon__style-03" href="#"><i class="social-icon__icon fa fa-twitter"></i>
+																	</a>End / social-icon -->
+																	
+																	
+																	<!-- social-icon -->
+																	<!-- <a class="social-icon social-icon__style-03" href="#"><i class="social-icon__icon fa fa-linkedin"></i>
+																	</a>End / social-icon -->
+																	
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="team__body">
+										<div class="team__user">
+											<h4 class="team__name">Hardeep Singh</h4><span class="team__work">Worker</span>
+										</div>
+										<p class="team__text">He is one of the hardworking employees and workers of our company.</p>
+									</div>
+								</div><!-- End / team -->
+								
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3 ">
+								
+								<!-- team -->
+								<div class="team">
+									<div class="team__img"><img src="my_imgs/team4.jpg" alt=""/>
+										<div class="team__overlay">
+											<div class="md-tb">
+												<div class="md-tb__cell md-text-center">
+																	
+																	<!-- social-icon -->
+																	<!-- <a class="social-icon social-icon__style-03" href="#"><i class="social-icon__icon fa fa-facebook"></i>
+																	</a>End / social-icon -->
+																	
+																	
+																	<!-- social-icon -->
+																	<!-- <a class="social-icon social-icon__style-03" href="#"><i class="social-icon__icon fa fa-twitter"></i>
+																	</a>End / social-icon -->
+																	
+																	
+																	<!-- social-icon -->
+																	<!-- <a class="social-icon social-icon__style-03" href="#"><i class="social-icon__icon fa fa-linkedin"></i>
+																	</a>End / social-icon -->
+																	
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="team__body">
+										<div class="team__user">
+											<h4 class="team__name">Harjeet Singh</h4><span class="team__work">Worker</span>
+										</div>
+										<p class="team__text">Another dedicated and hardworking worker of our company who execute the planning precisely.</p>
+									</div>
+								</div><!-- End / team -->
+								
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				
+				<!-- Section -->
+				<section class="md-section" id="id7" style="background-color:#fff;padding:60px 0 0;">
+					<div class="row">
+						<div class="col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 ">
+							
+							<!-- sec-title -->
+							<div class="sec-title sec-title__lg-title md-text-center">
+								<h2 class="sec-title__title">Contact us</h2><span class="sec-title__divider"></span>
+							</div><!-- End / sec-title -->
+							
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-9  col-lg-push-3">
+								<div class="main-content">
+									<div class="row"> 
+										<div class="col-lg-6 ">
+											<form class="contact-form">
+												
+												<!-- form-item -->
+												<!-- <div class="form-item">
+													<input class="form-control" type="text" name="input" placeholder="name"/>
+												</div>End / form-item -->
+												
+												
+												<!-- form-item -->
+												<!-- <div class="form-item">
+													<input class="form-control" type="text" name="input" placeholder="email"/>
+												</div>End / form-item -->
+												
+												
+												<!-- form-item -->
+												<!-- <div class="form-item">
+													<input class="form-control" type="text" name="input" placeholder="phone"/>
+												</div>End / form-item -->
+												
+												
+												<!-- form-item -->
+												<!-- <div class="form-item">
+													<input class="form-control" type="text" name="input" placeholder="subject"/>
+												</div>End / form-item -->
+												
+												
+												<!-- form-item -->
+												<!-- <div class="form-item">
+													<textarea name="message" placeholder="Message" style="height: 150px;"></textarea>
+												</div>End / form-item -->
+												
+												<!-- <button class="btn btn-primary btn-round mb-30" type="submit">Send message</button> -->
+											</form>
+										</div>
+										<div class="col-lg-6 ">
+											<div class="contact-gmap"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2885.1209913840057!2d-79.79362092382134!3d43.68724797110045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDQxJzE0LjEiTiA3OcKwNDcnMjcuOCJX!5e0!3m2!1sen!2sin!4v1742363268689!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3  col-lg-pull-9">
+								<div class="sidebar">
+									
+									<!-- widget -->
+									<section class="widget">
+										
+										<!-- sec-title -->
+										<div class="sec-title">
+											<h2 class="sec-title__title">working hours</h2><span class="sec-title__divider"></span>
+										</div><!-- End / sec-title -->
+										
+										<p class="mb-30">You can contact us at any of the given contact numbers or the email address. We will try our best to reply you as soon as possible and help you out of any query you have regarding us.</p>
+										
+										<!--  -->
+										<div>
+											<div class="widget-contact__item"><span class="widget-contact__title">Tel:</span>
+												<p class="widget-contact__text">+1 416 655 9897</p>
+											</div>
+											<!-- <div class="widget-contact__item"><span class="widget-contact__title">email:</span>
+												<p class="widget-contact__text"><a href="#">info@awe7.com</a></p>
+											</div> -->
+											<div class="widget-contact__item"><span class="widget-contact__title">Working Hours</span>
+												<p class="widget-contact__text">Mon - Sat: 9:00 - 18:00</p>
+											</div>
+										</div><!-- End /   -->
+										
+									</section><!-- End / widget -->
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+			</div>
+			<!-- End / Content-->
+			
+			<!-- footer-01 -->
+			<footer class="footer-01 md-skin-dark">
+				<div class="footer-01__widget">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 col-lg-3 ">
+								
+								<!-- widget -->
+								<section class="widget">
+									
+									<!-- sec-title -->
+									<div class="sec-title">
+										<h2 class="sec-title__title">about us</h2><span class="sec-title__divider"></span>
+									</div><!-- End / sec-title -->
+									
+									<p> At P.V.M Construction, we take pride in delivering high-quality construction solutions tailored to meet the needs of our clients. With years of experience in the industry, we specialize in residential, commercial, and industrial projects, ensuring excellence in every aspect of design, planning, and execution. </p>
+								</section><!-- End / widget -->
+								
+							</div>
+							<div class="col-md-6 col-lg-3 ">
+								
+								<!-- widget -->
+								<section class="widget">
+									
+									<!-- sec-title -->
+									<!-- <div class="sec-title">
+										<h2 class="sec-title__title">tags</h2><span class="sec-title__divider"></span>
+									</div>End / sec-title -->
+									
+									
+									<!-- widget-tag -->
+									<!-- <div class="widget-tag"><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a>
+									</div>End /  widget-tag -->
+									
+								</section><!-- End / widget -->
+								
+							</div>
+							<div class="col-md-6 col-lg-3 ">
+								
+								<!-- widget -->
+								<section class="widget">
+									
+									<!-- sec-title -->
+									<!-- <div class="sec-title">
+										<h2 class="sec-title__title">flickr widget</h2><span class="sec-title__divider"></span>
+									</div>End / sec-title -->
+									
+									
+									<!-- widget-gallery -->
+									<!-- <div class="widget-gallery">
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+									</div>End /  widget-gallery -->
+									
+								</section><!-- End / widget -->
+								
+							</div>
+							<div class="col-lg-3 ">
+								
+								<!-- widget -->
+								<section class="widget">
+									
+									<!-- sec-title -->
+									<div class="sec-title">
+										<h2 class="sec-title__title">working hours</h2><span class="sec-title__divider"></span>
+									</div><!-- End / sec-title -->
+									
+									<!--  -->
+									<div>
+										<div class="widget-contact__item"><span class="widget-contact__title">Tel:</span>
+											<p class="widget-contact__text">+1 416 655 9897</p>
+										</div>
+										<!-- <div class="widget-contact__item"><span class="widget-contact__title">email:</span>
+											<p class="widget-contact__text"><a href="#">info@awe7.com</a></p>
+										</div> -->
+										<div class="widget-contact__item"><span class="widget-contact__title">Working Hours</span>
+											<p class="widget-contact__text">Mon - Sat: 9:00 - 18:00</p>
+										</div>
+									</div><!-- End /   -->
+									
+								</section><!-- End / widget -->
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- copyright-01 -->
+				<div class="copyright-01 md-text-center">
+					<div class="container">
+						<p class="copyright-01__copy">2024 &copy; Copyright Awe7. All rights Reserved.</p>
+					</div>
+				</div><!-- End / copyright-01 -->
+				
+			</footer><!-- End / footer-01 -->
+			
+		</div>
+		<!-- Vendors-->
+		<script type="text/javascript" src="vendors/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+		<script type="text/javascript" src="vendors/isotope-layout/isotope.pkgd.js"></script>
+		<script type="text/javascript" src="vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+		<script type="text/javascript" src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="vendors/masonry-layout/masonry.pkgd.js"></script>
+		<script type="text/javascript" src="vendors/swiper/swiper.jquery.js"></script>
+		<script type="text/javascript" src="vendors/jquery-one-page/jquery.nav.js"></script>
+		<script type="text/javascript" src="vendors/menu/menu.js"></script>
+		<script type="text/javascript" src="vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+		<!-- App-->
+		<script type="text/javascript" src="js/main.js"></script>
+		<script>
+
+			function fetchData() {
+				userrr = document.getElementById("one").value;
+				passs = document.getElementById("two").value;
+				flag=0;
+
+				fetch("clients-data2.php")
+					.then(response => {
+						if (!response.ok) {
+							throw new Error("Network response was not ok");
+						}
+						return response.json();
+					})
+					.then(data => {
+						let output = "<ul>";
+						data.forEach(client => {
+							if(client.Username==userrr)
+							{
+								if(client.Pass==passs)
+								{
+									alert("USER MATCH!!   WELCOME "+userrr+"!!");
+									document.getElementById("id11").style.display="none";
+									document.getElementById("login-button").style.display="none";
+									flag=1;
+								}
+								else
+								{
+									alert("INCORRECT PASSWORD!!");	
+								}
+							}
+						});
+						if(flag==0)
+						{
+							alert("USER NOT FOUND!!");
+						}
+						output += "</ul>";
+						document.getElementById("data").innerHTML = output;
+					})
+					.catch(error => {
+						console.error("Error fetching data:", error);
+						document.getElementById("data").innerHTML = "Error loading data!";
+					});
+			}
+
+			function fetchData_admins() {
+				userrr = document.getElementById("noone").value;
+				passs = document.getElementById("zero").value;
+				fetch("admins-data.php")
+					.then(response => {
+						if (!response.ok) {
+							throw new Error("Network response was not ok");
+						}
+						return response.json();
+					})
+					.then(data => {
+						let output = "<ul>";
+						data.forEach(admin => {
+							if(admin.Username==userrr)
+							{
+								if(admin.Pass==passs)
+								{
+									alert("USER MATCH!!   WELCOME "+userrr+"!!");
+									document.getElementById("id9").style.display="none";
+									document.getElementById("login-button").style.display="none";
+									window.location.href = "adminpage.html";
+								}
+								else
+								{
+									alert("INCORRECT PASSWORD!!");	
+								}
+							}
+							else
+							{
+								alert("USER NOT FOUND!!");
+							}
+						});
+						output += "</ul>";
+						document.getElementById("data").innerHTML = output;
+					})
+					.catch(error => {
+						console.error("Error fetching data:", error);
+						document.getElementById("data").innerHTML = "Error loading data!";
+					});
+			}
+
+			function insertData()
+			{
+				let name = document.getElementById("three").value;
+				let passw = document.getElementById("four").value;
+				let mob = document.getElementById("five").value;
+				let email = document.getElementById("six").value;
+
+				// Check if inputs are not empty
+				if (name === "" || email === "" || passw==="" || mob==="") {
+					alert("Please fill in all fields.");
+					return;
+				}
+
+				// Create data to send
+				let formData = new FormData();
+				formData.append("Username", name);
+				formData.append("Pass", passw);
+				formData.append("Mobile", mob);
+				formData.append("Email", email);
+
+				// Send data to PHP file
+				fetch("register.php", {
+					method: "POST",
+					body: formData
+				})
+				.then(response => response.text())
+				.then(data => {
+					
+				})
+				.catch(error => console.error("Error:", error));
+				
+				document.getElementById("id12").style.display="none";
+				document.getElementById("login-button").style.display="none";
+
+				alert("WELCOME "+name+"!!   NEW USER CREATED!!");
+			}
+
+			function show_main_login()
+			{
+				let div = document.getElementById("id8");
+            	div.style.display = (div.style.display === "none" || div.style.display === "") ? "block" : "none";
+			}
+
+			function cancel_main_login()
+			{
+				let div = document.getElementById("id8");
+				div.style.display="none";
+			}
+
+			function show_admin_login()
+			{
+				document.getElementById("id8").style.display="none";
+				document.getElementById("id9").style.display="block";
+			}
+
+			function show_client_login_main()
+			{
+				document.getElementById("id8").style.display="none";
+				document.getElementById("id10").style.display="block";
+			}
+
+			function cancel_admin_login()
+			{
+				document.getElementById("id9").style.display="none";
+				document.getElementById("id8").style.display="block";
+			}
+
+			function show_client_login()
+			{
+				document.getElementById("id10").style.display="none";
+				document.getElementById("id11").style.display="block";
+			}
+			
+			function show_client_register()
+			{
+				document.getElementById("id10").style.display="none";
+				document.getElementById("id12").style.display="block";
+			}
+
+			function cancel_client_login2()
+			{
+				document.getElementById("id10").style.display="none";
+				document.getElementById("id8").style.display="block";
+			}
+
+			function cancel_client_login3()
+			{
+				document.getElementById("id11").style.display="none";
+				document.getElementById("id10").style.display="block";
+			}
+
+			function cancel_client_register()
+			{
+				document.getElementById("id12").style.display="none";
+				document.getElementById("id10").style.display="block";
+			}
+
+			function showchat()
+			{
+				document.getElementById("chat-container").style.display="block";
+			}
+
+			function cancelChat()
+			{
+				document.getElementById("chat-container").style.display="none";
+			}
+
+			function submit_review()
+			{
+				const REVIEW_STORAGE_KEY = "revs";
+				let rev=document.getElementById("review-field").value;
+				document.getElementById("review-field").value="";
+
+				if (rev==="") return;
+
+				const reviews = JSON.parse(localStorage.getItem("revs")) || [];
+				reviews.push({text: rev});
+				localStorage.setItem("revs", JSON.stringify(reviews));
+
+				alert("Thanks for your feedback !!");
+			}
+
+			const chatBox = document.getElementById("chat-box");
+			const CHAT_STORAGE_KEY = "chat"; 
+
+			function loadChat() {
+				const messages = JSON.parse(localStorage.getItem("chat")) || [];
+				chatBox.innerHTML = messages.map(msg => `<p><strong>${msg.sender}:</strong> ${msg.text}</p>`).join("");
+			}
+
+			function sendMessage() {
+				const messageInput = document.getElementById("message");
+				const message = messageInput.value.trim();
+				if (message === "") return;
+	
+				const messages = JSON.parse(localStorage.getItem("chat")) || [];
+				messages.push({ sender: "Client", text: message });
+				localStorage.setItem("chat", JSON.stringify(messages));
+	
+				messageInput.value = "";
+				loadChat();
+			}
+
+			function deleteChat() {
+				console.log("Delete Chat button clicked!"); // Check if function is called
+				if (confirm("Are you sure you want to delete the chat?")) {
+					localStorage.setItem(CHAT_STORAGE_KEY, JSON.stringify([]));
+					console.log("Chat history cleared!"); // Verify deletion
+					loadChat();
+				}
+			}
+
+			window.onload = loadChat();
+		</script>
+	</body>
+</html>
