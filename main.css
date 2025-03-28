@@ -334,7 +334,7 @@
 
 #review-box
 {
-    margin-left: 340px;
+    margin-left: 540px;
     margin-top: 50px;
     width: 50%;
 }
@@ -353,6 +353,75 @@
 #review-field
 {
     border-radius: 6px 0px 0px 6px;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#experience
+{
+    margin-left: 300px;
+    margin-top: 10px;
+    animation: blink 800ms infinite;
+    font-size: 22px;
+}
+
+#rating-btn
+{
+    padding: 10px 20px 10px 20px;
+    margin-left: 20px;
+    background-color: #f0542c;
+    color: rgba(0, 0, 0, 0.9);
+    border-style: none;
+    border-radius: 5px;
+}
+
+#rate-us
+{
+    margin-left: -350px;
+    position: absolute;
+    margin-top: 16px;
+    font-size: 26px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    direction: ltr;
+    margin-left: 400px;
+    margin-top: 50px;
+    width: 50%;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    cursor: pointer;
+    color: gray;
+    transition: color 0.2s;
+    margin: 0 3px;
+}
+
+/* Highlight stars on hover */
+.stars label:hover,
+.stars label:hover ~ label {
+    color: gold;
+}
+
+/* Highlight stars when selected */
+.stars input:checked ~ label {
+    color: gold;
+}
+
+/* Fix the order so selection works from left to right */
+.stars {
+    flex-direction: row-reverse;
 }
 
 
